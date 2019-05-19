@@ -1,0 +1,1 @@
+ setxkbmap -layout "us,ir" -option "grp:sclk_toggle"

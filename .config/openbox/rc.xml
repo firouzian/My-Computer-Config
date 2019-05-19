@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_config xmlns="http://openbox.org/3.4/rc"
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+
+ <desktops>
+	<number>1</number>
+ </desktops>
+
+ <keyboard>
+	<keybind key="A-Tab">
+		<action name="NextWindow">
+			<finalactions>
+			<action name="Focus"/>
+			<action name="Raise"/>
+			<action name="Unshade"/>
+			</finalactions>
+		</action>
+	</keybind>
+	<keybind key="W-e">
+		<action name="Execute">
+			<enabled>true</enabled>
+			<name>Terminal</name>
+			<command>xterm -fa DejaVuSansMono -fs 16 -ls -xrm 'XTerm*selectToClipboard: true'</command>
+		</action>
+	</keybind>
+	<keybind key="W-w">
+		<action name="ToggleMaximize"/>
+	</keybind>
+ </keyboard>
+
+</openbox_config>
