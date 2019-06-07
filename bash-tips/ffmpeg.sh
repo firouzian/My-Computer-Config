@@ -1,0 +1,1 @@
+LD_LIBRARY_PATH=./usr/lib/x86_64-linux-gnu/ ./usr/bin/ffmpeg -y -f x11grab -s 8192x8192 -i :0 -c:v libx264 -crf 0 -map 0 -preset ultrafast out-1.mp4 -f v4l2 -i /dev/video0 -s 640x480 -c:v libx264 -crf 0 -map 1 -preset ultrafast out-2.mp4 -f pulse -i default -ac 2 -map 2 out-3.mp3
